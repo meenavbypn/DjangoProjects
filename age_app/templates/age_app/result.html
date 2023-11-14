@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Age and Gender Prediction</title>
+    </head>
+    <body>
+        <h1> Age and Gender Prediction Result</h1>
+        <link rel="stylesheet" type="css" href="{% static 'age_app/styles.css' %}">
+        <p> Uploaded Image:</p>
+        <img src="{{ image.image.url }}" alt="Uploaded Image" width="300">
+        <p><b>Estimated Age: {{ predicted_age }}</b></p>
+        <p><b>Estimated Gender: {{ predicted_gender}}</b> </p>
+    </body>
+</html>
